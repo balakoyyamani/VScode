@@ -1,0 +1,22 @@
+WORKFLOW OF PYTHON
+
+You
+ │
+ │ Write Code
+ ▼
+hello.py
+ │
+ ▼
+Python Interpreter
+ │
+ ▼
+Bytecode (.pyc)
+ │
+ ▼
+Python Virtual Machine
+ │
+ ▼
+Operating System
+ │
+ ▼
+Output

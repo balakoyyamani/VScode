@@ -1,0 +1,437 @@
+Excellent! Data types are one of the most important topics in Python. Since you already know Java, you'll notice both similarities and key differences.
+
+# What is a Data Type?
+
+A **data type** tells Python what kind of value a variable stores.
+
+Example:
+
+```python
+age = 22
+```
+
+Here, `22` is an **integer (`int`)**.
+
+---
+
+# Python Data Types
+
+Python has several built-in data types.
+
+| Category | Data Types                         |
+| -------- | ---------------------------------- |
+| Numeric  | `int`, `float`, `complex`          |
+| Boolean  | `bool`                             |
+| Text     | `str`                              |
+| Sequence | `list`, `tuple`, `range`           |
+| Set      | `set`, `frozenset`                 |
+| Mapping  | `dict`                             |
+| Binary   | `bytes`, `bytearray`, `memoryview` |
+| Special  | `NoneType`                         |
+
+---
+
+# 1. Integer (`int`)
+
+Stores whole numbers.
+
+```python
+age = 22
+marks = 100
+
+print(age)
+print(type(age))
+```
+
+Output:
+
+```text
+22
+<class 'int'>
+```
+
+---
+
+# 2. Float (`float`)
+
+Stores decimal numbers.
+
+```python
+salary = 50000.75
+
+print(salary)
+print(type(salary))
+```
+
+Output:
+
+```text
+50000.75
+<class 'float'>
+```
+
+---
+
+# 3. Complex (`complex`)
+
+Used in mathematics and scientific computing.
+
+```python
+num = 2 + 3j
+
+print(num)
+print(type(num))
+```
+
+Output:
+
+```text
+(2+3j)
+<class 'complex'>
+```
+
+---
+
+# 4. String (`str`)
+
+Stores text.
+
+```python
+name = "Balachandar"
+
+print(name)
+print(type(name))
+```
+
+Output:
+
+```text
+Balachandar
+<class 'str'>
+```
+
+Strings can use:
+
+```python
+"a"
+'b'
+"""Hello"""
+```
+
+---
+
+# 5. Boolean (`bool`)
+
+Stores only two values.
+
+```python
+is_student = True
+is_passed = False
+
+print(type(is_student))
+```
+
+Output:
+
+```text
+<class 'bool'>
+```
+
+---
+
+# 6. List (`list`)
+
+A list stores multiple values and **can be modified**.
+
+```python
+numbers = [10, 20, 30, 40]
+
+print(numbers)
+print(type(numbers))
+```
+
+Output:
+
+```text
+[10, 20, 30, 40]
+<class 'list'>
+```
+
+You can change elements:
+
+```python
+numbers[0] = 100
+
+print(numbers)
+```
+
+Output:
+
+```text
+[100, 20, 30, 40]
+```
+
+---
+
+# 7. Tuple (`tuple`)
+
+A tuple also stores multiple values, but it **cannot be modified**.
+
+```python
+marks = (90, 95, 88)
+
+print(marks)
+print(type(marks))
+```
+
+Output:
+
+```text
+(90, 95, 88)
+<class 'tuple'>
+```
+
+---
+
+# 8. Set (`set`)
+
+Stores **unique** values.
+
+```python
+numbers = {1, 2, 3, 3, 4}
+
+print(numbers)
+```
+
+Output:
+
+```text
+{1, 2, 3, 4}
+```
+
+Notice that duplicate values are removed automatically.
+
+---
+
+# 9. Dictionary (`dict`)
+
+Stores data as **key-value pairs**.
+
+```python
+student = {
+    "name": "Balachandar",
+    "age": 22,
+    "city": "Chennai"
+}
+
+print(student)
+```
+
+Output:
+
+```text
+{'name': 'Balachandar', 'age': 22, 'city': 'Chennai'}
+```
+
+Access values using keys:
+
+```python
+print(student["name"])
+```
+
+Output:
+
+```text
+Balachandar
+```
+
+---
+
+# 10. None (`NoneType`)
+
+Represents the absence of a value.
+
+```python
+x = None
+
+print(x)
+print(type(x))
+```
+
+Output:
+
+```text
+None
+<class 'NoneType'>
+```
+
+---
+
+# Checking the Data Type
+
+Use the built-in `type()` function.
+
+```python
+a = 10
+b = 3.14
+c = "Python"
+
+print(type(a))
+print(type(b))
+print(type(c))
+```
+
+Output:
+
+```text
+<class 'int'>
+<class 'float'>
+<class 'str'>
+```
+
+---
+
+# Type Conversion
+
+Python lets you convert between types.
+
+```python
+age = "22"
+
+print(type(age))
+
+age = int(age)
+
+print(type(age))
+```
+
+Output:
+
+```text
+<class 'str'>
+<class 'int'>
+```
+
+---
+
+# Java vs Python
+
+| Java                      | Python            |
+| ------------------------- | ----------------- |
+| `int age = 22;`           | `age = 22`        |
+| `double salary = 5000.5;` | `salary = 5000.5` |
+| `String name = "Bala";`   | `name = "Bala"`   |
+| `boolean flag = true;`    | `flag = True`     |
+| `ArrayList`               | `list`            |
+| `HashMap`                 | `dict`            |
+| `HashSet`                 | `set`             |
+
+### Biggest Difference
+
+In Java:
+
+```java
+int age = 22;
+```
+
+You **must** declare the type.
+
+In Python:
+
+```python
+age = 22
+```
+
+Python automatically determines the type. This is called **dynamic typing**.
+
+---
+
+# Memory Trick
+
+```
+Numbers
+-------
+int
+float
+complex
+
+Text
+----
+str
+
+True/False
+----------
+bool
+
+Collections
+-----------
+list
+tuple
+set
+dict
+
+Special
+-------
+None
+```
+
+---
+
+# Interview Questions
+
+### 1. How many built-in data types does Python have?
+
+Python includes built-in types such as:
+
+* Numeric (`int`, `float`, `complex`)
+* `bool`
+* `str`
+* `list`
+* `tuple`
+* `set`
+* `dict`
+* Binary types (`bytes`, `bytearray`, `memoryview`)
+* `NoneType`
+
+---
+
+### 2. How do you check the type of a variable?
+
+```python
+print(type(variable))
+```
+
+---
+
+### 3. What is the difference between a list and a tuple?
+
+| List                 | Tuple                     |
+| -------------------- | ------------------------- |
+| Mutable (can change) | Immutable (cannot change) |
+| Uses `[]`            | Uses `()`                 |
+
+---
+
+## Practice Exercise
+
+Predict the output before running it:
+
+```python
+a = 100
+b = 10.5
+c = "AI"
+d = True
+e = [1, 2, 3]
+f = (4, 5, 6)
+g = {"name": "Bala"}
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+print(type(f))
+print(type(g))
+```
+
+This exercise will help you become comfortable recognizing Python's most commonly used data types.

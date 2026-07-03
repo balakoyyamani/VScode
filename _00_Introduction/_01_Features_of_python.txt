@@ -1,0 +1,15 @@
+FEATURES OF PYTHON
+
+1.Simple and Easy to Learn
+2.Interpreted Language
+3.Object-Oriented
+4.Cross-Platform
+5.Huge Standard Library
+6.Massive Third-Party Ecosystem
+7.Dynamically Typed
+8.Automatic Memory Management
+9.High-Level Language
+10.Excellent for Ai and Machine Language
+12.Versatile
+
+
