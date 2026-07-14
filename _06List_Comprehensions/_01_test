@@ -1,0 +1,22 @@
+a=[]
+for i in range(1,6):
+    a.append(i)
+print(a)
+
+b=[i for i in range(1,6)]
+print(b)
+
+c=["Even" if i%2==0 else "Odd" for i in b ]
+print(c)
+
+d=[x for x in b if x%2==0]
+print(d)
+
+e=["bala","siva","irai","Athavan"]
+f=[i.upper() for i in e]
+print(f)
+g=[i for i in f if len(i)==4]
+print(g)
+
+dic={i:i*i for i in range(1,6)}
+print(dic)
