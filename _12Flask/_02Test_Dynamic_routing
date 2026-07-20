@@ -1,0 +1,11 @@
+from flask import Flask
+
+app=Flask(__name__)
+
+@app.route("/home/<name>/<int:age>")
+def home(name,age):
+    return f"""<h1>Welcome {name}!</h1>
+   <p>You are {age} years old.</p>"""
+
+if __name__ == "__main__":
+    app.run(debug=True)
