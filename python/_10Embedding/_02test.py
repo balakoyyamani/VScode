@@ -1,4 +1,4 @@
-from config import client,model
+from python._10Embedding.config import client,model
 import numpy as np
 
 documents = [

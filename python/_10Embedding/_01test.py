@@ -1,4 +1,4 @@
-from config import model,client
+from python._10Embedding.config import model,client
 import numpy as np
 
 text1="I need a job"

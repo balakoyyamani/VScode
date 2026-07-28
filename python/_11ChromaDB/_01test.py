@@ -1,4 +1,4 @@
-from config import client
+from python._11ChromaDB.config import client
 from pprint import pprint
 
 collection=client.create_collection(
